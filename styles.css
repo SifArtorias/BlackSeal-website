@@ -1,0 +1,47 @@
+/* Basic page setup */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#team {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--team-background-color);
+    color: var(--team-font-color);
+    text-align: center;
+}
+
+/* Title styling */
+/* Define custom color and font variables */
+:root {
+    /*main sections*/
+    --main-font-color: #e2e9f1;
+    --main-background-color: #000000;
+    --main-font: 'Segoe UI', Georgia, serif;
+    /* team section*/
+    --team-font-color: #000000;
+    --team-background-color: #ededed;
+}
+
+/*Title sizes*/
+h1 {
+    font-size: 3rem;
+    /* titre principal plus grand */
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    /* texte normal un peu plus grand */
+}
