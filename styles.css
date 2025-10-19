@@ -34,15 +34,56 @@ body {
 
 /*Title sizes*/
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     /* titre principal plus grand */
 }
 
 h2 {
+    font-size: 3rem;
+}
+
+h3 {
     font-size: 2.5rem;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     /* texte normal un peu plus grand */
+}
+
+
+.bandeau {
+  width: 100%;
+  height: auto;
+  display: block; /* Évite l’espace en bas de l’image */
+}
+
+.container {
+  width: 100%;  /* prend toute la largeur de l'écran */
+  max-width: none; /* pas de limite maximale */
+  margin: 0;
+  padding: 0; /* enlever le padding si nécessaire */
+}
+
+/* Row container for columns */
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* space between columns */
+  margin-bottom: 40px; /* space between rows */
+}
+
+/* Column styling */
+.column {
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+/* Single centered column */
+.single-column {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
 }
