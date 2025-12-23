@@ -17,41 +17,102 @@
     <section id="description">
         <img src="images/boxing.jpg" alt="Bandeau" class="bandeau">
         <h2>Description of the project</h2>
+        <p class="description-text">
+            Our project is a cartoon-style boxing simulation that blends virtual reality with real-world interaction. 
+            The player physically punches a real mattress, while their movements are tracked and translated into a virtual
+             environment where their fists interact with a digital punching bag.
+        </p>
+        <p class="description-text">
+            By combining VR immersion with tangible physical feedback, the game aims to offer the best of both worlds: 
+            the realism and engagement of real movements, and the creativity and visual freedom of a virtual environment. 
+            This mixed-reality approach creates an intuitive, fun, and immersive boxing experience that emphasizes interaction,
+             accessibility, and player engagement.
+        </p>
         <div class="container">
             <!-- First row: 3 columns -->
-            <div class="row">
+            <div class="row2">
                 <div class="column">
                     <h3>Goal and Motivation</h3>
-                    <p>BLA BLA BLA BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA.
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
+                    <p style="text-align: justify;">
+                        Our project’s main objective is to deepen our proficiency in Unity, particularly for creating immersive 3D experiences.
+                         We are eager to gain hands-on experience with virtual reality, exploring its potential to enhance user interaction and engagement.
+                          What particularly motivates us is experimenting with the combination of virtual and real-world interactions within a 
+                          boxing experience: we aim to integrate users’ physical movements with digital and physical feedback to create 
+                          an engaging simulation. At the same time, this project allows us to develop our creativity and ability to design 
+                          innovative interactions, while strengthening our technical skills in programming, 3D design, and immersive ergonomics. 
+                          Ultimately, we hope this work will give us a stronger understanding of the challenges and possibilities of mixed-reality environments.
                     </p>
                 </div>
                 <div class="column">
                     <h3>Graphics and Interaction Technologies Used and Developed</h3>
-                    <p>BLA BLA BLA BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA.
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
+                    <p style="text-align: justify;">
+                        For this project, we relied mostly on established software to create an immersive boxing experience. 
+                        Unity served as the main development platform, allowing us to build and integrate the 3D environment, 
+                        handle physics interactions, and manage VR functionalities. Blender was used to design and model the 3D assets,
+                         including the sandbag and the health bar, providing the visual detail necessary for a convincing experience
                     </p>
-                </div>
-                <div class="column">
-                    <h3>Individual Contributions</h3>
-                    <p>BLA BLA BLA BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA.
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
+                    <p style="text-align: justify;">
+                        We also experimented with developing a punch detection system using the MediaPipe library 
+                        in combination with a camera. This system was designed to track hand movements and detect hits on the virtual sandbag.
+                         However, during testing, we found that the Oculus Quest 2’s built-in detection features were 
+                         more accurate and responsive, so we ultimately relied on the Quest 2 for hand tracking. 
+                         The Quest 2’s hand detection allows precise tracking of individual fingers and hand positions, 
+                         enabling natural and intuitive interactions without controllers. Additionally, we utilized the Quest 2’s
+                          passthrough functionality, which lets users see their real-world surroundings within VR. This feature helped us
+                        safely integrate physical movements into the virtual environment, bridging the gap between real and virtual interactions.
+                    </p>
+                    <p style="text-align: justify;">
+                        This combination of technologies allowed us to create a realistic, responsive, and safe mixed-reality boxing experience.
                     </p>
                 </div>
             </div>
 
             <!-- Second row: 3 columns -->
-            <div class="row">
+            <div class="row2">
                 <div class="column">
-                    <h3>Challenges and Obstacles</h3>
-                    <p>BLA BLA BLA BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA.
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
+                    <h3>Individual Contributions</h3>
+                    <p style="text-align: justify;">
+                        • Nathan : My contribution to the project focused on enhancing both physical interactivity and visual feedback.
+                        Helge and I developed a realistic physics system for the sandbag to ensure its movement and reaction to
+                        impact felt authentic and immersive. Additionally, I implemented a dynamic health bar UI
+                        that tracks the number of hits remaining, providing the player with clear visual cues leading up to the sandbag’s explosion.
                     </p>
                 </div>
+                <div class="column">
+                    <h3>Challenges and Obstacles</h3>
+                    <p style="text-align: justify;">
+                        One of the main challenges we faced was our limited experience with Unity. 
+                        Most of the team had never worked with the platform before, which made it initially difficult to implement 3D models,
+                         physics, and VR interactions. Learning the engine while simultaneously developing the project required 
+                         careful planning and a lot of experimentation, as we needed to balance learning with producing functional results.
+                    </p>
+                    <p style="text-align: justify;">
+                         Coordinating our work as a team was another significant obstacle. A project of this complexity required 
+                         dividing tasks efficiently while ensuring that the various components—3D models, physics, UI, and VR
+                          interactions—remained compatible. Communication and version control were crucial to avoid conflicts 
+                          and ensure smooth integration of everyone’s contributions.
+                    </p>
+                    <p style="text-align: justify;">
+                        Detecting punches accurately also presented a challenge. We initially attempted to use MediaPipe with
+                         an external camera to track hand movements and detect impacts on the sandbag. While the system worked in principle,
+                          it proved less reliable than the Quest 2’s native hand-tracking feature, which provided more precise detection 
+                          of hand position and gestures. Switching to the Quest 2’s built-in solution ultimately improved responsiveness 
+                          and made the experience more natural.
+                    </p>
+                    <p style="text-align: justify;">
+                        Creating realistic physics for the sandbag was another technical hurdle. The sandbag needed to react authentically
+                         to hits, with appropriate movement and feedback, without becoming unpredictable or breaking immersion. This required
+                          tuning physics parameters carefully and extensive testing to strike the right balance between realism and stability.
+                    </p>
+                    <p style="text-align: justify;">
+                        Finally, we had to consider the target audience for the museum exhibition, particularly children. 
+                        Designing the sandbag to look engaging but not frightening required thoughtful artistic choices. 
+                        We needed to ensure that the experience was exciting and immersive without creating elements that might
+                        appear too aggressive or scary for younger visitors.
+                    </p>
+                </div>
+            </div>
+            <div class="row2">
                 <div class="column">
                     <h3>Related work</h3>
                     <p>BLA BLA BLA BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA.
@@ -61,9 +122,22 @@
                 </div>
                 <div class="column">
                     <h3>Lessons learned</h3>
-                    <p>BLA BLA BLA BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA.
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
-                        BLA BLA BLABLA BLA BLABLA BLA BLABLA BLA BLA
+                    <p style="text-align: justify;">
+                        One of the key lessons we learned during this project is the critical importance of coordination and 
+                        communication within a team. Clearly defining tasks, assigning roles, and maintaining an organized workflow are essential,
+                         especially for complex projects involving multiple components like 3D modeling, physics, and VR interactions.
+                          Using tools like GitHub effectively helped us track progress, avoid conflicts, and ensure that everyone’s 
+                          work was integrated smoothly. We realized that consistent communication and planning significantly reduce 
+                          confusion and make the development process much more efficient.
+                    </p>
+                    <p style="text-align: justify;">
+                        Another important lesson was to be confident in the project’s concept before diving into development.
+                         Early in the project, we frequently changed our approach, which caused delays and required reworking parts of the
+                          system. Initially, our plan focused on using only haptic feedback with a virtual sandbag that could provide 
+                          tactile sensations to the player. Later, we modified the concept to include a real impact on a mattress combined 
+                          with haptic feedback. Ultimately, we decided to abandon haptic feedback altogether. This experience taught us that
+                           solidifying the core idea before starting development can save time, avoid unnecessary complexity, and help the
+                            team focus on building a coherent and functional experience.
                     </p>
                 </div>
             </div>
@@ -81,49 +155,39 @@
             <h2>Pictures</h2>
         </section>
 
-        <section id="comments">
-            <h2>Demo Comments</h2>
-        </section>
-
         <section id="team">
             <h2>The Team</h2>
 
             <div class="container">
                 <!-- First row of 3 team members -->
-                <div class="row">
+                <div class="row3">
                     <div class="column">
-                        <img src="images/circle.png" alt="John Doe">
+                        <img src="images/circle.png" alt="John Doe" class="profile-pic">
                         <p>John Doe</p>
                         <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
                     </div>
                     <div class="column">
-                        <img src="images/circle.png" alt="Jane Smith">
+                        <img src="images/circle.png" alt="Jane Smith" class="profile-pic">
                         <p>Jane Smith</p>
                         <a href="https://www.linkedin.com/in/janesmith" target="_blank">LinkedIn</a>
                     </div>
                     <div class="column">
-                        <img src="images/circle.png" alt="Michael Brown">
+                        <img src="images/circle.png" alt="Michael Brown" class="profile-pic">
                         <p>Michael Brown</p>
                         <a href="https://www.linkedin.com/in/michaelbrown" target="_blank">LinkedIn</a>
                     </div>
                 </div>
 
-                <!-- Second row of 3 team members -->
-                <div class="row">
+                <div class="row3">
                     <div class="column">
-                        <img src="images/circle.png" alt="Emily Johnson">
+                        <img src="images/circle.png" alt="Emily Johnson" class="profile-pic">
                         <p>Emily Johnson</p>
                         <a href="https://www.linkedin.com/in/emilyjohnson" target="_blank">LinkedIn</a>
                     </div>
                     <div class="column">
-                        <img src="images/circle.png" alt="David Lee">
-                        <p>David Lee</p>
-                        <a href="https://www.linkedin.com/in/davidlee" target="_blank">LinkedIn</a>
-                    </div>
-                    <div class="column">
-                        <img src="images/circle.png" alt="Sophia Martinez">
-                        <p>Sophia Martinez</p>
-                        <a href="https://www.linkedin.com/in/sophiamartinez" target="_blank">LinkedIn</a>
+                        <img src="images/Nathan_picture.jpg" alt="Nathan Vignerie" class="profile-pic">
+                        <p>Nathan Vignerie</p>
+                        <a href="https://fr.linkedin.com/in/nathan-vignerie-4b240a250" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>

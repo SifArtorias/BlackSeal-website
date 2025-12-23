@@ -1,6 +1,6 @@
 /* Basic page setup */
 body {
-    margin: 0;
+    margin: 4rem;
     padding: 0;
     height: 100vh;
     font-family: var(--main-font);
@@ -47,7 +47,7 @@ h3 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     /* texte normal un peu plus grand */
 }
 
@@ -66,7 +66,14 @@ p {
 }
 
 /* Row container for columns */
-.row {
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  gap: 20px; /* space between columns */
+  margin-bottom: 40px; /* space between rows */
+}
+
+.row3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
   gap: 20px; /* space between columns */
@@ -86,4 +93,18 @@ p {
   margin: 0 auto;
   padding: 20px;
   border-radius: 8px;
+}
+
+.description-text {
+    max-width: 800px;      
+    margin: 0 auto;        
+    text-align: justify;   
+}
+
+.profile-pic {
+    width: 300px;          
+    height: 300px;        
+    object-fit: cover;     
+    border-radius: 50%;   
+    border: 3px solid #000; 
 }
